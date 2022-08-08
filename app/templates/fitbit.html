@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+  <p>What was the date of the sleep study? <br>
+    Sleep data will be retrieved from two weeks prior (inclusive). <br>
+    Please Use \"YYYY-MM-DD\" format</p>
+  <p><input type = "text" name = "date"></p>
+  <p>How many weeks of data? (Max 4 at a time)</p>
+  <p><input type = "text" name = "bl"></p>
+  <p><input type = "submit" value = "submit"></p>
+</form>
+{% endblock %}

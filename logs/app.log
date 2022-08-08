@@ -1,0 +1,70 @@
+2022-08-08 11:47:02,683 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 11:48:11,848 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 11:48:15,123 ERROR: Exception on /withings_download [GET] [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\decorators.py", line 10, in decorated_function
+    if current_user.confirmed is False:
+AttributeError: 'AnonymousUserMixin' object has no attribute 'confirmed'
+2022-08-08 11:50:34,513 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 11:50:44,936 ERROR: Exception on /withings_download [GET] [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\routes.py", line 276, in withings_dl
+    df = pd.read_sql_table('Participant', str(Config.SQLALCHEMY_DATABASE_URI))
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\pandas\io\sql.py", line 286, in read_sql_table
+    raise ValueError(f"Table {table_name} not found")
+ValueError: Table Participant not found
+2022-08-08 11:51:37,407 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 11:53:15,021 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 11:53:18,499 ERROR: Exception on /withings_download [GET] [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\routes.py", line 279, in withings_dl
+    for i in current_user.studies:
+AttributeError: 'AnonymousUserMixin' object has no attribute 'studies'
+2022-08-08 12:34:01,390 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:34:51,312 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:38:38,787 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:39:13,883 ERROR: Exception on /assign_studies [GET] [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "\\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\decorators.py", line 20, in decorated_function
+    if current_user.admin is False:
+AttributeError: 'AnonymousUserMixin' object has no attribute 'admin'
+2022-08-08 12:41:55,055 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:48:21,243 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:51:30,766 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:55:00,002 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 12:57:41,245 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 13:00:28,893 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 13:06:53,597 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]
+2022-08-08 13:22:05,558 INFO: App startup [in \\userMN\M\mann0242\MyWork\GitHub\deviceTracking\app\__init__.py:67]

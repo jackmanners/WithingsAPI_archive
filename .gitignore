@@ -1,0 +1,7 @@
+/venv
+/__pycache__
+/local
+/.idea/
+/bitLoader/
+/app/__pycache__
+local_database.db

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-50 col-lg-50 mx-lg-auto mx-md-50">
+
+      <h1 class="pt-5 pb-2"></h1>
+
+      <div class="Form">
+        <form method="POST">
+          {{ form.csrf_token }}
+          Select the participant IDs or check here ({{ form.download_all }}) to download all:
+          {{ wtf.form_field(form.download_id) }}
+          <br>
+          {{ wtf.form_field(form.datefrom) }} <br>
+          {{ wtf.form_field(form.dateto) }}
+          Note: Detailed data will be collected from midday to midday on the selected days (in the local timezone).<br>
+          If you require daytime data that may roll over this time, please expand dates accordingly.
+          <br><br>
+          {{ form.submit }} <br>
+        </form>
+      </div>
+
+
+      <p class="pt-5"><strong>{{ message }}</strong></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

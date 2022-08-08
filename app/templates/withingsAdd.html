@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-50 col-lg-50 mx-lg-auto mx-md-50">
+
+      <h1 class="pt-5 pb-2"></h1>
+
+      <div class="Form">
+        <form method="POST">
+          {{ form.csrf_token }}
+          {{ wtf.form_field(form.study) }}
+          Note: If the study is not listed, please contact an administrator.<br><br>
+          {{ wtf.form_field(form.id) }} <br><br>
+          {{ form.submit }} <br>
+        </form>
+      </div>
+
+
+      <p class="pt-5"><strong>{{ message }}</strong></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

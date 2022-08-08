@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-50 col-lg-50 mx-lg-auto mx-md-50">
+
+      <h1 class="pt-5 pb-2"></h1>
+
+      <div class="Form">
+        <form method="POST">
+          {{ form.csrf_token }}
+          Select the user(s) here:
+          {{ wtf.form_field(form.users) }} <br>
+          If the user does not exist please create account first. <br>
+          Select  studies or <br> check here {{ form.studies_all }} to download all:
+          {{ wtf.form_field(form.studies) }}
+          <br>
+          If the study is not named or is new, please add it here: {{ form.study_new }} <br><br>
+          {{ form.submit }} <br>
+        </form>
+      </div>
+
+
+      <p class="pt-5"><strong>{{ message }}</strong></p>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
