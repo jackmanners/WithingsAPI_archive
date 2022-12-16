@@ -5,3 +5,4 @@
 /bitLoader/
 /app/__pycache__
 local_database.db
+*.json
